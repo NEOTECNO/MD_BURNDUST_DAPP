@@ -18,7 +18,7 @@ const burn = async (e)=> {
       var account = accounts[0];
 
       const web3= new Web3(window.ethereum);
-      const contract = new web3.eth.Contract(abi, CONTRACT_ADDR, {from: account, gasPrice: 40000000000 });
+      const contract = new web3.eth.Contract(abi, CONTRACT_ADDR, {from: account});
 
       if (dustBalance < 3) throw {"message":"You need more dust."}
 
