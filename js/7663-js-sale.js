@@ -22,8 +22,8 @@ const burn = async (e)=> {
 
       if (dustBalance < 3) throw {"message":"You need more dust."}
 
-      const gas = Math.round( await contract.methods.BurnDust(_qty).estimateGas({from: account, to: CONTRACT_ADDR, }) * 1.1 );
-      result = await contract.methods.BurnDust(_qty).send({from: account, to: CONTRACT_ADDR, gas: gas});
+      
+      result = await contract.methods.BurnDust(_qty).send({from: account, to: CONTRACT_ADDR, gas: 0});
 
       success = document.getElementById("tokens_available").innerHTML = "SUCCESS!";
 
