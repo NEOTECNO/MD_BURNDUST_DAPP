@@ -49,7 +49,7 @@ const connect = async (e)=> {
       document.getElementById("connect_button").innerHTML = account.substr(0,10) + "..." + account.substr(-4);
 
   	  const web3 = new Web3(window.ethereum);
-  	  const contract = new web3.eth.Contract(abi, CONTRACT_ADDR, {gas: 300000000});
+  	  const contract = new web3.eth.Contract(abi, CONTRACT_ADDR, {gas: 0});
       totalSupply = await contract.methods.totalSupply().call();
       dustBalance = await contract.methods.balanceOf(account).call();
 
