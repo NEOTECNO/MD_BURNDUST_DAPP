@@ -139,7 +139,7 @@ const getTokens = async (e)=> {
 			  var tokensString = String(getTokensArray);
 
 			  if (tokensString != "") {
-				  document.getElementById("tokensIds").innerHTML = "Moondust tokens: " + tokensString.substr(0,24) + "..." + tokensString.substr(-4);
+				  document.getElementById("tokensIds").innerHTML = "Moondust tokens: " + tokensString.substr(0,27) + "...";
 				  }
 			  else
 				  {
