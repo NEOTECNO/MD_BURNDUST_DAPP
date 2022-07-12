@@ -16,20 +16,22 @@
         <header class="header">
             <div class="container">
                 <div class="header__row">
-
+                    
                     <div class="header__logo">
                         <img src="images/img-logo.png" alt="logo site">
                     </div>
+                    
+                    <div class="header__center">
+                        <a href="https://etherscan.io/address/0x9ba2e40c3251d860ba90f9eab77663eec673af66" target="_blank" class="head-etherscan"></a>
+                        <a href="https://opensea.io/collection/the-rulers-of-the-skies" target="_blank" class="head-opensea"></a>
+                        <a href="https://twitter.com/NFTMoondust" target="_blank" class="head-twitter"></a>
+                    </div>
 
                     <div class="header__right">
-
-                        <a href="https://etherscan.io/address/0x0b3b95547a22bee3c03be558ec649dbd69af8476" target="_blank" class="head-etherscan"></a>
-                        <a href="https://opensea.io/collection/moondust-official" target="_blank" class="head-opensea"></a>
-                        <a href="https://twitter.com/NFTMoondust" target="_blank" class="head-twitter"></a>
-
+                        <button class="btn-head" id="approve"> Approve </button>
                         <button class="btn-head" id="connect_button"> Connect wallet </button>
-                        
                     </div>
+
                 </div>
             </div>
         </header>
@@ -37,24 +39,27 @@
             <div class="container">
                 <div class="main__row">
                     <div class="main__left">
-
-                        <div class="form-text"> TOTAL BURNED </div>
+                        
+                        <div class="form-text"> RISEN FROM THE DUST </div>
                         <br>
-                        <div class="number" id="tokens_available"> 6666/6666 </div>
-                        <div class="form-text" id="dustBalance"> Moondust tokens: 0 </div>
-
+                        <div class="number" id="tokens_available"> 222/2222 </div>
+                        <div class="form-text" id="tokensIds"> Moondust tokens: 0 </div>
+                        <div class="form-text" id="dustBalance"> Moondust burned: 0 </div>
+                            
                             <div class="form-row">
-                                
-                                <button class="btn-form" id="burn">BURN 3 DUST</button>
+                                <button class="btn-2" id="mintDW" onClick="decrementMintAmount()"> - </button>
+                                <input type="text" placeholder="mint amount" class="in-form js-in-number" id="tokens_amount">
+                                <button class="btn-2" id="mintUP" onClick="incrementMintAmount()"> + </button>
 
+                                <button class="btn-form" id="mint"> MINT </button>
                             </div>
 
                             <div class="form-text"> 
                                 
-                            BURN 3 MOONDUST TO GET A RTS NFT! <br><br>
-                            ONLY BURN YOUR MOONDUST THROUGH THIS DAPP!<br><br>
-                            DO NOT USE THE CONTRACT TO BURN OR YOU WILL LOSE YOUR TOKENS! <br><br>
-                            WE ARE CHILDREN OF THE COSMOS, RULERS OF THE SKIES, WITH MOON DUST IN OUR LUNGS & EYES. BURN IF YOU MUST, IN DUST WE WILL RISE.<br><br><br>
+                            THE RULERS OF THE SKIES NEED 3 DUST TO RISE! <br><br>
+                            ONLY BURN YOUR MOONDUST THROUGH THE NEW <a href="https://etherscan.io/address/0x9ba2e40c3251d860ba90f9eab77663eec673af66" target="_blank">RULERS OF THE SKIES CONTRACT!</a><br><br>
+                            DO NOT USE OTHER THAN <a href="https://etherscan.io/address/0x9ba2e40c3251d860ba90f9eab77663eec673af66" target="_blank">THIS CONTRACT</a> TO BURN OR YOU WILL LOSE YOUR TOKENS! <br><br>
+                            BURN IF YOU MUST, IN DUST WE WILL RISE.<br><br><br>
                             
                             <div class="text-center copyright">
                                 <span>© 2022 MoonDust. All rights reserved</span>
