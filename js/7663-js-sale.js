@@ -133,7 +133,7 @@ const getTokens = async (e)=> {
 		
     	if (account.length > 0) {
   	  	const web3 = new Web3(window.ethereum);
-			  contract2 = new web3.eth.Contract(DUST_ABI, DUST_CONTRACT, {gas: 30000000});
+			  contract2 = new web3.eth.Contract(DUST_ABI, DUST_CONTRACT, {gas: 3000000});
 			  var getTokensArray = await contract2.methods.tokensOfOwner(account).call();
 
 			  var tokensString = String(getTokensArray);
@@ -161,7 +161,7 @@ const connect = async (e)=> {
         document.getElementById("connect_button").innerHTML = account.substr(0,10) + "..." + account.substr(-4);
 
   	  	const web3 = new Web3(window.ethereum);
-  	  	contract1 = new web3.eth.Contract(RTS_ABI, RTS_CONTRACT, {gas: 300000000});
+  	  	contract1 = new web3.eth.Contract(RTS_ABI, RTS_CONTRACT, {gas: 3000000});
       	totalSupply = await contract1.methods.totalSupply().call();
 			  dustBalance = await contract1.methods.addressDustBalance(account).call();
 
