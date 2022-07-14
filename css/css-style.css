@@ -41,7 +41,7 @@ body {
   margin: 0;
   min-width: 320px;
   width: 100%;
-  background-image: url(/images/BG1.png);
+  background-image: url(/images/BG1.gif);
   background-repeat: repeat;
   background-size: cover;
   background-position: center center;
@@ -75,6 +75,7 @@ a,
 a:visited {
   text-decoration: none;
   transition: all 0.4s ease 0s;
+  color: yellow;
 }
 
 a:hover {
@@ -112,8 +113,8 @@ body {
   padding: 6.5vh 0 10vh 0;
   display: flex;
 
-  background-image: url(/images/BG1.png);
-  background-color: #170c18;
+  background-image: url(/images/BG1.gif);
+  background-color: #18180c;
 	background-position: center;
 	background-size: cover;
 	background-repeat: repeat;
@@ -299,7 +300,8 @@ body {
 }
 
 .form-row {
-  display: flex;
+  display: inline-block;
+  flex-direction: row;
   align-items: center;
   margin-bottom: 15px;
 }
@@ -309,7 +311,8 @@ body {
   border-radius: 1px;
   background-color: #ffffffcc;
   height: 50px;
-  padding: 0 26px;
+  width: 20%;
+  padding: 0 15px;
   color: #3b2f7d;
   font-size: 15px;
   font-weight: 500;
@@ -370,7 +373,7 @@ body {
 
 .text-bot-form {
   margin-top: 35px;
-  color: #e7e7e7;
+  color: #ffffff;
   max-width: 400px;
   line-height: 20px;
 }
@@ -628,7 +631,7 @@ textarea.error {
     border-radius: 1px;
     background-color: #ffffffcc;
     height: 50px;
-    width: 100%;
+    width: 40vw;
     padding: 20px 26px;
     color: #3b2f7d;
     font-size: 15px;

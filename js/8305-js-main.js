@@ -6,7 +6,7 @@ function ready() {
         let current = e.currentTarget;
         let val = current.value.replace(/[^0-9\.]/g, '');
 
-        if (+val <= 2) {
+        if (+val <= 20) {
             current.value = val;
         } else {
             current.value = val.slice(0, -1); 
